@@ -1,9 +1,22 @@
-# SearchEngineProject
- Search Engine Project in Python
- 
- Objective: development of a serach engine based on wikipedia pages that returns documents in order of relevance.
- 
- Workflow: 
-1 - Development of a basic serach engine, indexing a wikipedia dump via whoosh
-2 - Evaluation of results, creation and use of a test set and comparison with the search engine
-3 - Optimization, implementation of preprocessing, query expansion and scoring algorithms  
+# Search Engine with Whoosh
+This project is a simple search engine made with whoosh based on wikipedia dump. 
+
+## Requirement
+- python3
+- pipenv
+- whoosh
+- nltk
+- pyenchant
+
+## Installation
+```bash
+pipenv shell
+pip install Whoosh
+pip install nltk
+pip install pyenchant
+```
+## Run
+```bash
+python3 SearchEngine.py
+```
+On first run, it will create an index. If the index is already present then it will not be recreated
