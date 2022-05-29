@@ -79,7 +79,7 @@ class Searcher:
     @staticmethod
     def suggestion_word(query):
         chkr = enchant.Dict("en_US")
-        return [word for word in chkr.suggest(query)]
+        return list(chkr.suggest(query))
 
 
 
