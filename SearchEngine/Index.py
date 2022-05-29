@@ -30,7 +30,8 @@ class CustomIndex:
         self.reader = None
         print(type(self.schema))
 
-    def createReader(self, index):
+    @staticmethod
+    def createReader(index):
         return index.reader()
 
     def create(self):
