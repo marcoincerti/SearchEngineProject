@@ -100,7 +100,7 @@ def search_query(searcher, user_input, SE_listbox, debug=False, debug_query=None
 
         AVG_SCORE = AVG(SE_id_list, GO_id_list)
         for elem in SE_id_list:
-            if elem in GO_id_rel_dict.keys():
+            if elem in GO_id_rel_dict:
                 SE_rel_list.append(GO_id_rel_dict.get(elem))
             else:
                 SE_rel_list.append(0)
